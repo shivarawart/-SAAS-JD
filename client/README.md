@@ -1,218 +1,218 @@
-Here’s a **clean, professional, SaaS-style `README.md` for your frontend** with improved structure, clarity, and proper formatting (no raw `<br>` tags — in Markdown we use spacing and headings instead for clean rendering).
 
-You can directly paste this:
+# 🚀 JD Intelligence (Frontend)
 
----
+AI-powered recruiter intelligence platform that analyzes job descriptions and extracts **real hiring intent**, **skills**, **hidden expectations**, and **career roadmaps**.
 
-```md
-# 🚀 JD Intelligence Frontend
-
-A modern **React + TypeScript SaaS frontend** for analyzing Job Descriptions using AI.
-
-This UI helps users paste a Job Description and instantly get:
-- Must-have skills
-- Nice-to-have skills
-- Hidden expectations
-- Likely interview questions
-- Red flags in job posts
+This frontend is built for a modern SaaS experience with a clean UI, fast interaction, and scalable architecture.
 
 ---
 
-# ✨ Features
+## ✨ Overview
 
-## 🧠 AI-Powered Analysis
-- Paste any job description
-- Get structured recruiter insights instantly
-- Powered by OpenAI backend
+JD Intelligence helps developers and job seekers:
 
-## ⚡ Fast & Clean UI
-- Responsive design (mobile + desktop)
-- Minimal SaaS-style interface
-- Smooth UX with loading states
-
-## 🧩 Modular Architecture
-- Feature-based structure
-- Reusable UI components
-- Clean separation of concerns
+- 🔍 Decode job descriptions using AI
+- 🧠 Extract must-have & nice-to-have skills
+- 🎯 Identify hidden recruiter expectations
+- 🧪 Predict interview questions
+- 📈 Generate learning roadmaps
+- 🛠 Improve career direction with AI insights
 
 ---
 
-# 🏗️ Tech Stack
+## 🧱 Tech Stack
 
-- React (Vite)
-- TypeScript
-- Axios (API calls)
-- Custom Hooks (logic layer)
-- Modular CSS / Global Styles
+- ⚛️ React (Vite)
+- 💙 TypeScript
+- 🎨 Tailwind CSS
+- 🔗 Axios (API layer)
+- 🧠 Custom Hooks Architecture
+- 🧩 Modular Feature-Based Folder Structure
 
 ---
 
-# 📁 Folder Structure
+## 📁 Project Structure
 
 ```
-```
+
 src/
 │
-├── components/
+├── components/        # Reusable UI components
 │   ├── layout/
-│   │   └── Navbar.tsx
 │   └── ui/
-│       ├── Button.tsx
-│       ├── Card.tsx
-│       └── Loader.tsx
 │
-├── features/
+├── features/          # Feature-based modules
 │   └── jd-analyzer/
-│       ├── components/
-│       │   ├── JDInput.tsx
-│       │   ├── JDResults.tsx
-│       │   └── ResultCard.tsx
-│       ├── api.ts
-│       ├── types.ts
-│       └── useJDAnalyzer.ts
 │
-├── hooks/
-│   └── useDebounce.ts
+├── pages/             # Route pages (Home, Career)
 │
-├── services/
-│   └── api.ts
+├── services/          # API layer
 │
-├── pages/
-│   └── Home.tsx
+├── hooks/             # Custom hooks
 │
-├── config/
-│   └── env.ts
+├── types/             # TypeScript types
 │
-├── styles/
-│   └── globals.css
-│
-├── types/
-│   └── global.ts
-│
-├── App.tsx
-└── main.tsx
+└── utils/             # Helper functions
 
 ````
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Features
 
-## 1. Install dependencies
-```bash
-npm install
-````
+### 🧠 AI Job Analyzer
+- Paste job description
+- Get structured AI breakdown
+- Instant recruiter-level insights
+
+### 📊 Career Intelligence (NEW)
+- Career roadmap generator
+- Skill gap analysis
+- Learning path suggestions
+- Project recommendations
+
+### 🎯 Smart Insights
+- Must-have skills detection
+- Hidden expectations analysis
+- Interview question prediction
+- Red flags detection
 
 ---
 
-## 2. Setup environment variables
+## 🖥️ Pages
 
-Create a `.env` file:
+### 🏠 Home Page
+- JD Analyzer input system
+- Real-time AI response viewer
+- Clean split-screen UI
+
+### 🧭 Career Page
+- Career goal input
+- AI-powered roadmap generator
+- Skills + learning path breakdown
+
+---
+
+## 🔌 API Configuration
+
+Create `.env` file:
 
 ```env
 VITE_API_BASE_URL=http://localhost:3000
-```
+````
 
 ---
 
-## 3. Run frontend
+## ▶️ Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
 
 ```bash
 npm run dev
 ```
 
----
+### 3. Build for production
 
-# 🔗 Backend Connection
-
-Make sure backend is running:
-
-```
-http://localhost:3000/api/v1/jd/analyze
+```bash
+npm run build
 ```
 
-Frontend sends:
+### 4. Preview build
 
-```json
-{
-  "job_description": "React developer role..."
-}
+```bash
+npm run preview
 ```
 
 ---
 
-# 🧠 How It Works
+## 🔗 Backend Connection
+
+This frontend connects to:
 
 ```
-User Input
-   ↓
-JDInput Component
-   ↓
-useJDAnalyzer Hook
-   ↓
-API Layer (Axios)
-   ↓
-Backend (Hono + AI Service)
-   ↓
-AI Response
-   ↓
-JDResults UI
+POST /api/v1/jd/analyze
+```
+
+and career endpoint:
+
+```
+POST /api/v1/career/analyze
 ```
 
 ---
 
-# 🎯 Goal of This Project
+## 🎨 UI Philosophy
 
-This project is designed to demonstrate:
-
-* Real-world SaaS architecture
-* AI integration in frontend applications
-* Clean React architecture
-* Production-ready UI/UX thinking
-
----
-
-# 📌 Key Highlights (Interview Ready)
-
-✔ Feature-based architecture
-✔ Custom hooks for business logic
-✔ Clean API abstraction layer
-✔ Scalable folder structure
-✔ Production-level UI design
+* Dark-first SaaS UI
+* Minimal, premium spacing
+* Glassmorphism elements
+* Developer-focused experience
+* Fast interaction (no heavy UI blocking)
 
 ---
 
-# 🚀 Future Improvements
+## 📌 Key Design Principles
 
-* Streaming AI response (ChatGPT-like typing)
+* Feature-based architecture
+* Separation of UI & logic
+* Reusable components
+* Scalable folder structure
+* Clean API abstraction layer
+
+---
+
+## 🧠 What Makes This Special
+
+Unlike basic JD tools, this project focuses on:
+
+* Real recruiter thinking simulation
+* Career direction guidance
+* AI-driven learning paths
+* Production-grade frontend structure
+
+---
+
+## 👨‍💻 Developer
+
+**Shiva**
+
+* GitHub: [Repository](https://github.com/shivarawart/-SAAS-JD.git)
+* Project Type: AI SaaS
+* Status: In Development 🚧
+
+---
+
+## 🚀 Future Improvements
+
 * Authentication system
-* Save JD history
-* Export PDF reports
-* Dark mode UI
-* Rate limiting + caching
+* User history dashboard
+* Saved career paths
+* AI chat assistant mode
+* Resume builder integration
+* Export to PDF reports
 
 ---
 
-# 💡 Author Mindset
+## 📄 License
 
-This project is built with a focus on:
-
-> "One powerful feature done extremely well is better than 10 incomplete features."
+This project is for learning and portfolio purposes.
 
 ---
 
-# 🧠 License
-
-Free to use for learning, portfolio, and interviews.
-
----
+⭐ If you like this project, give it a star on GitHub!
 
 ```
 
----
 
-If you want next upgrade, I can help you make:
+If you want next level upgrade, I can also:
+- :contentReference[oaicite:0]{index=0}
+- :contentReference[oaicite:1]{index=1}
+- or :contentReference[oaicite:2]{index=2}
 
-🔥 **:contentReference[oaicite:0]{index=0}**  
-🔥 or **:contentReference[oaicite:1]{index=1}**
-```
+Just tell me 👍

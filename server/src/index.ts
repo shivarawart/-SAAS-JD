@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { jdRoutes } from "./routes/jd.routes";
+import { careerRoutes } from "./routes/career.routes";
 import { logger } from "./config/logger";
 
 const app = new Hono();
@@ -58,6 +59,7 @@ app.get("/", (c) => {
  * =====================================
  */
 app.route("/api/v1/jd", jdRoutes);
+app.route("/api/v1/career",careerRoutes);
 
 /**
  * =====================================
